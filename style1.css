@@ -1,0 +1,143 @@
+/* Global styles */
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 10px; /* Combined margin properties */
+    padding: 0;
+}
+
+/* Input container styles */
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 20px 20px; /* Shorthand for margin properties */
+}
+
+/* Button styles */
+#solvebtn {
+    width: 50%;
+    padding: 10px 0;
+    background-color: blueviolet;
+    color: white;
+    border: none; /* Simplified border-style */
+    border-radius: 5px;
+}
+
+/* Variable count input styles */
+#varcount {
+    width: 30px;
+    margin: 10px 0;
+}
+
+/* Display input container styles */
+#displayinput {
+    background-color: rgb(190, 238, 238);
+    width: fit-content;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Display input styles */
+#displayinput input {
+    width: 30px;
+}
+
+/* Binary text styles */
+.binary {
+    letter-spacing: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Row styles */
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+/* Decimal input styles */
+.row .decimal {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0;
+    width: 30px;
+}
+
+/* Boolean function styles */
+#booleanfunction {
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: larger;
+    font-family: monospace;
+}
+
+/* Active boolean function styles */
+#booleanfunction.active {
+    background-color: rgb(51, 51, 51);
+    padding: 10px;
+}
+
+/* Notebook styles */
+#notebook {
+    width: 100%;
+    padding: 10px;
+    display: none; /* Hidden by default */
+}
+
+/* Active notebook styles */
+#notebook.active {
+    display: block; /* Shown when active */
+}
+
+/* Minterm header styles */
+.mintermheader {
+    font-size: 0.9em;
+}
+
+/* Minterm header span styles */
+.mintermheader span {
+    padding: 0 5px;
+    overflow: hidden;
+    font-size: 2em;
+    background-color: #ddd;
+}
+
+/* MD container styles */
+#mdcontainer {
+    font-family: monospace;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+/* MD container div styles */
+#mdcontainer div {
+    display: flex;
+}
+
+/* MD container div div styles */
+#mdcontainer div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+/* MD container input styles */
+#mdcontainer div input {
+    width: 80%;
+    height: 100%;
+}
+
+/* OR text styles */
+#or {
+    font-size: 1.5em;
+}
+
+/* Responsive styles */
+@media (max-width: 500px) {
+    body {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
